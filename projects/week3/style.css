@@ -1,0 +1,52 @@
+body {
+	background: url("images/sea_serpent_group-light_blue.jpg");
+	background-size: cover;
+	color:#000;
+	font-family: Georgia, serif;
+	letter-spacing: 2px;
+	text-align: center;
+	margin-right: 50px;
+	margin-left: 50px;
+}
+
+h1 {
+	font-family: 'Diplomata SC', serif;
+	font-size: 90px;
+	line-height: 80px;
+	margin: 90px auto 20px auto;
+}
+
+ul {
+	font-size: 18px;
+	font-style: italic;
+	letter-spacing: 1px;
+	line-height: 33px;
+	list-style: none;
+	padding: 0px;
+	}
+
+p {
+	font-size: 24px;
+}
+
+hr {
+	width: 300px;
+}
+
+a {
+	color: #ffa500;
+	text-decoration: none;
+	font-size: 10px;
+	margin-bottom: 200px;
+}
+
+#fishtypes {
+ 	list-style: none;
+}
+
+#slogan {
+	font-style: italic;
+	font-family: 'Diplomata SC', sans-serif;
+	font-size: 12px;
+	margin-bottom: 30px;
+}
