@@ -35,6 +35,19 @@ h1 {
 
 }
 
+h2 {
+	font-family: "Oswald", helvetica, sans-serif;
+	font-weight: 700;
+	font-size: 1em;
+	text-transform: uppercase;
+}
+
+h4 {
+	margin: 2em 0 2em 0;
+	font-style: italic;
+	color: #EF4430;
+}
+
 p {
 
 }
@@ -45,16 +58,30 @@ ul {
 }
 
 nav {
+	right: 0px;
+	margin: 1.5em 1em 0 0;
 	display: inline-block;
-	position: absolute;
+	position: fixed;
 	padding: 0;
 }
 
 li {
-	margin: 1em 0 7em 0;
-	padding: 0em 0 6.45em 0;
+	margin: 1em 0 1em 0;
+	padding: 0em 0 3em 0;
 	border-bottom: 1px solid black;
 	display: block;
+}
+
+li p {
+	font-size: 4em;
+	margin: 1em 0 1em 0;
+
+}
+
+a {
+	text-decoration: none;
+	color: #f7f4d8;
+
 }
 
 /*#bannerimage {
@@ -64,8 +91,11 @@ li {
 }*/
 
 #logo {
-	width: 14em;
-	float: left;
+	padding-left: 1em;
+	width: 12em;
+	left: 1em;
+/*	float: left;
+*/	display: block;
 }
 
 .navli {
@@ -73,11 +103,10 @@ li {
 	display: inline-block;
 	margin: 0;
 	padding: .3em 1.2em;
-	color: #f7f4d8;
 	font-size: 1em;
-	text-decoration: none;
 	border: 1px solid #f7f4d8;
 }
+
 
 #bannerimage {
 	width: 1280px;
@@ -129,4 +158,19 @@ li {
 
 .item {
 	display: block;
+}
+
+/* visited link */
+a:visited {
+    color: #ffa500;
+}
+
+/* mouse over link */
+a:hover {
+    color: #ffc500;
+}
+
+/* selected link */
+a:active {
+    color: #ffc500;
 }
