@@ -27,7 +27,7 @@ header {
 h1 {
 	margin: .5em 0 1em 0;
 	padding-left: .25em;
-	font-size: 8em;
+	font-size: 10em;
 	line-height: 1em;
 	font-family: "Oswald", helvetica, sans-serif;
 	font-weight: 700;
@@ -68,6 +68,7 @@ nav {
 	display: inline-block;
 	position: fixed;
 	padding: 0;
+	z-index: 1;
 }
 
 li {
@@ -89,8 +90,16 @@ a {
 	color: #e7e4c8;
 }
 
+iframe {
+	width: 100%;
+	padding: 0px;
+
+}
+
 footer {
+	background-color: #000;
 	height: 7em;
+	margin-top: 0px;
 }
 
 /*#bannerimage {
@@ -134,7 +143,7 @@ footer {
 
 #intro {
 	text-align: left;
-	width: 15em;
+	width: 27%;
 	/*display: inline-block;*/
 	position: left;
 /*	background-color: yellow;
@@ -142,8 +151,8 @@ footer {
 }
 
 #veglist {
-	width: 40em;
-	padding-left: 1em;
+	width: 70%;
+	padding-left: 3%;
 	display: inline-block;
 	text-align: left;
 /*	background-color: green;
@@ -202,6 +211,12 @@ footer {
 	line-height: 1.4em;
 }
 
+#tornedge {
+	background-image: url("images/torn-paper-edge.png");
+	background-repeat: repeat-x;
+	height: 20px;
+}
+
 /* visited link */
 a:visited {
     color: #e7e4c8;
@@ -224,4 +239,95 @@ a:active {
 	content: " ";
 	clear: both;
 	height: 0;
+}
+
+@media screen and (max-width: 960px) {
+
+#deck {
+	width: 94%;
+/*	margin: 0 2%;
+*/	padding: 3.3em 3%;
+	position: relative;
+	display: inline-block;
+}
+
+#intro {
+	text-align: left;
+	width: 28%;
+	display: inline-block;
+	position: left;
+	float: left;
+}
+
+#veglist {
+	width: 68%;
+padding-left: 4%;
+text-align: left;
+}
+
+@media screen and (max-width: 730px) {
+
+#deck {
+	width: 80%;
+/*	margin: 0 2%;
+*/	padding: 3.3em 10%;
+	position: relative;
+	display: inline-block;
+}
+
+#intro {
+	text-align: left;
+	width: 100%;
+	position: left;
+	margin-bottom: 3em;
+}
+
+#veglist {
+	width: 100%;
+	text-align: left;
+	padding-left: 0px;
+}
+
+/*.veggie {
+	width: 100%;
+}
+
+.vegimg {
+	width: 27%;
+}
+
+.info {
+	width: 73%;
+}
+*/
+
+/*h4 {
+	font-size: 3.25em;
+}*/
+
+@media screen and (max-width: 5584px) {
+
+#deck {
+	width: 90%;
+/*	margin: 0 2%;
+*/	padding: 3.3em 5%;
+	position: relative;
+	display: inline-block;
+}
+
+#intro {
+	text-align: left;
+	width: 100%;
+	position: left;
+	margin-bottom: 3em;
+}
+
+#veglist {
+	width: 100%;
+	text-align: left;
+	padding-left: 0px;
+}
+
+h4 {
+	font-size: 3.25em;
 }
