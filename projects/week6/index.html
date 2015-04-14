@@ -4,11 +4,12 @@
 	<title>Big Thorn Farms</title>
 		<link rel="stylesheet" type="text/css" href="reset.css">
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 	<header>
 		<img id="logo" src="images/big-thorn-farm_logo-cream.png" alt="Big Thorn Farm logo" />
-		<nav>
+		<nav id="main-nav">
 			<ul>
 				<li class="navli">
 					<a href="index.html">home</a>
@@ -24,7 +25,26 @@
 				</li>
 			</ul>
 		</nav>
-	</header>
+		<!-- MOBILE NAV -->		
+		<nav id="mobile-nav">
+			<label for="menu-toggle">menu</label>
+			<input type="checkbox" id="menu-toggle">
+				<ul id="menu">
+				<li class="navli">
+					<a href="index.html">home</a>
+				</li>
+				<li class="navli">
+					<a href="#">about</a>
+				</li>
+				<li class="navli">
+					<a href="#">products</a>
+				</li>
+				<li class="navli">
+					<a href="#">contact</a>
+				</li>
+				</ul>
+				</nav>
+		</header>
 		<h1>WHAT GREENS ARE MADE OF</h1>
 
 <!-- 	<img id="bannerimage" src="images/girl-picking-berries.png" alt="Girl Picking Berries">
