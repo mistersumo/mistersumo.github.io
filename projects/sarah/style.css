@@ -1,0 +1,323 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,700);
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic);
+
+body{
+	background-color: #000;
+	font-size: 16px;
+	color:#f0f8ff;
+}
+
+nav{
+	margin:0;
+	position: fixed;
+	width:100%;
+    background-color: #000;
+    z-index: 100;
+}
+
+ul{
+	display:block;
+	position: relative;
+	width:508px;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+li{
+	display: inline-block;
+}
+
+li a:link, li a:visited  {
+	display: inline-block;
+	padding:1.2em 2em;
+	font-size:.8em;
+	color:inherit;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing:.07em;
+}
+
+li a:hover, li a:active {
+	background-color: #f0f8ff;
+	color:#000;
+}
+
+hr{
+	position:relative;
+  	top:50%;
+  	height:1px;
+  	background-color: #fff;
+}
+
+header{
+	position:relative;
+  	top:50%;
+  	transform: translateY(-60%);
+}
+
+h1, h2, h3, li a, label{
+	font-family:'Roboto', sans-serif;
+}
+
+h1{
+	font-size:6em;
+	letter-spacing:-.02em;
+	font-weight:400;
+	text-align:center;
+}
+
+h2{
+	font-size:3em;
+	font-weight:700;
+	margin:0.5em 0;
+}
+
+h3{
+	font-size:1.618em;
+	font-weight:700;
+	margin:.25em 0;
+}
+
+h4{
+	font-family:'Droid Serif', serif;
+	font-size:.75em;
+	text-transform:uppercase;
+	font-weight:400;
+	margin:0 0 1em;
+}
+
+p{
+	font-family:'Droid Serif', serif;
+	font-size: 1em;
+	line-height: 1.618em;
+}
+
+footer{
+	height:100vh;
+	overflow:auto;
+}
+
+span{
+	font-style: italic;
+}
+
+figure img{
+	width:100%;
+	min-width:300px;
+	max-width:500px;
+}
+
+figcaption{
+	color:#fff;
+}
+
+footer{
+	background: url("../assets/milkyway.jpg") no-repeat center center fixed;	 
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	position: relative;
+}
+
+footer h2{
+	position:relative;
+  	top:50%;
+  	transform: translateY(-90%);
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.fullpage{
+	height:100vh;
+	overflow:auto;
+}
+
+.wrapper{
+	margin:2% auto 0;
+	width:90%;
+	max-width:980px;
+}
+
+/* ------------------------------------------- ANN + CARL ------- */
+.col_2{
+	width:48%;
+	margin:0 1%;
+	padding:1.25em;
+	float:left;
+}
+
+.col_2 img{
+	width:100%;
+}
+
+/* ------------------------------------------- IMAGES + SOUNDS ------- */
+.col_3{
+	width:30%;
+	margin:1% 1.665%;
+	float:left;
+}
+
+
+/* ------------------------------------------- LANDING ------- */
+
+#landing{
+	background: url("../assets/record.jpg") no-repeat center center fixed;	 
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+/* ------------------------------------------- INTRO ------- */
+
+#intro_wrap{
+	margin:0 auto;
+	width:580px;
+	padding:20px;
+	position: relative;
+  	top:50%;
+  	transform: translateY(-60%);
+}
+
+/* ------------------------------------------- ANN + CARL ------- */
+
+#anncarl{
+	background-color: #ffffff;
+}
+
+
+
+/* ------------------------------------------- IMAGES + SOUNDS ------- */
+
+#imgsounds{
+	position: relative;
+  	top:50%;
+  	transform: translateY(-60%);
+}
+
+
+/* ------------------------------------------- ABOUT ------- */
+
+#about{
+
+
+}
+
+/* ------------------------------------------- MOBILE MENU ------- */
+
+
+/* id that holds the main nav */
+#main-nav{
+	display: block;
+}
+
+/* id that holds the mobile nav */
+#mobile-nav{
+	display: none;
+}
+
+
+
+@media screen and (max-width:550px){
+
+
+
+/* ---------------------- vertical nav ------ */
+/*	nav{
+	margin:0;
+	position: fixed;
+	top:0;
+	width:100%;
+    background-color: #000;
+    z-index: 1;
+	}
+	ul{
+	display:block;
+	position: relative;
+	width:100%;
+	text-align: center;
+	}	
+	li, li a{
+	width:100%;
+	display: block;
+	}*/
+
+		.wrapper{
+		margin: 2% auto 0;
+ 		max-width:490px;
+	}
+
+	.col_2{
+	width:100%;
+	margin:7% 0;
+	padding:0;
+	float:none;
+}
+
+	#intro_wrap{
+	margin:0 auto;
+	width:90%;
+	padding:2%;
+	position: relative;
+  	top:50%;
+  	transform: translateY(-60%);
+}
+
+#anncarl{
+	background-color: #ffffff;
+	height:auto;
+}
+
+/* ---------------------- toggle nav ------ */
+
+	#main-nav{
+		display: none !important;
+	}
+
+	#mobile-nav{
+		display: block;
+		position: fixed;
+		bottom:0;
+	}
+
+	label {
+		display: block;
+	  	cursor: pointer;
+	  	text-align: center;
+		padding:1.2em 2em;
+		font-size:.8em;
+		text-transform: uppercase;
+		letter-spacing:.07em;
+	}
+
+	#menu-toggle{
+		display: none;
+	}
+
+	#menu{
+		display: none;
+	}
+
+	#menu-toggle:checked + #menu {
+		display:block;
+		width:100%;
+		text-align: center;
+		position: absolute;
+		top:-170px;
+		background-color: #000;
+	}
+
+	li, li a{
+		width:100%;
+		display: block;
+	}
+
+}
