@@ -209,9 +209,9 @@ footer {
 }
 
 /* visited link */
-a:visited {
+/*a:visited {
     color: #e7e4c8;
-}
+}*/
 
 /* mouse over link */
 a:hover {
