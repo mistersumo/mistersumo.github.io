@@ -223,6 +223,10 @@ a:active {
     color: #ffc500;
 }
 
+#viewall:hover {
+	color: #EF4430;
+}
+
 /*mobile nav*/
 #mobile-nav{
 	display: none;
